@@ -10,31 +10,34 @@ año = Number(prompt("Dime el año en el que estamos "));
 
 if (dia < 31 & nummes < 12 & año > 0){
 
-    if (nummes == 1){
-        mes = "Enero"
-    }else if (nummes == 2){
-        mes = "Febrero"
-    }else if (nummes == 3){
-        mes = "Marzo"
-    }else if (nummes == 4){
-        mes = "Abril"
-    }else if (nummes == 5){
-        mes = "Mayo"
-    }else if (nummes == 6){
-        mes = "Junio"
-    }else if (nummes == 7){
-        mes = "Julio"
-    }else if (nummes == 8){
-        mes = "Agosto"
-    }else if (nummes == 9){
-        mes = "Septiembre"
-    }else if (nummes == 10){
-        mes = "Octubre"
-    }else if (nummes == 11){
-        mes = "Noviembre"
-    }else if (nummes == 12){
-        mes = "Diciembre"
+    switch(nummes){
+
+        case 1:
+            mes = "Enero"
+        case 2:
+            mes = "Febrero"
+        case 3:
+            mes = "Marzo"
+        case 4:
+            mes = "Abril"
+        case 5:
+            mes = "Mayo"
+        case 6:
+            mes = "Junio"
+        case 7:
+            mes = "Julio"
+        case 8:
+            mes = "Agosto"
+        case 9:
+            mes = "Septiembre"
+        case 10:
+            mes = "Octubre"
+        case 11:
+            mes = "Nomviembre"
+        case 12:
+            mes = "Diciembre"
     }
+
     console.log(`${dia} de ${mes} de ${año}`);
 }else{
 
